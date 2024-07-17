@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini-game-RPS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-box">
         <h2>Rock - Paper - Scissors</h2>
         <div class="game-choices">
-            <div class="choices">
+            <div class="choices" id="rock">
                 <div class="choice">
                     <img src="rock.png" alt="rock">
                 </div>
                 <p>Rock</p>
             </div>
-            <div class="choices">
+            <div class="choices" id="paper">
                 <div class="choice">
                     <img src="paper.png" alt="paper">
                 </div>
                 <p>Paper</p>
             </div>
-            <div class="choices">
+            <div class="choices" id="scissors">
                 <div class="choice">
                     <img src="scissors.png" alt="scissors">
                 </div>
@@ -40,5 +40,9 @@
             <p id="cpu-score">0</p>
         </div>
     </div>
+    <div class="msg-box">
+        <p id="msg">Pick your choice</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

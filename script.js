@@ -16,11 +16,13 @@ const showWinner = (userWin) => {
         userScore++;
         userScorePara.innerText = userScore;
         msg.innerText = "You win!";
+        msg.style.backgroundColor="#2D7311";
     }
     else{
         cpuScore++;
         cpuScorePara.innerText = cpuScore;
         msg.innerText = "You lose";
+        msg.style.backgroundColor="#BB4D00";
     }
 };
 
@@ -29,6 +31,8 @@ const playGame = (userChoice) => {
 
     if(userChoice === compChoice){
         msg.innerText = "Draw";
+        msg.style.backgroundColor = "#32373B";
+        msg.style.color = "#FAFAFF";
     }
     else{
         let userWin = true;
